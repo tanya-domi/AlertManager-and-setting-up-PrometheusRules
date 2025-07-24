@@ -110,21 +110,21 @@ helm upgrade --install trivy-operator aqua/trivy-operator \
 ```
 ![Image](https://github.com/user-attachments/assets/dcb42778-4e4c-44fb-b5b4-a73f166a6a9c)
 
-# Check if all pods are running
+ Check if all pods are running
 ![Image](https://github.com/user-attachments/assets/803e5056-b666-4c27-a3c0-e64f393d7bbe)
 
-# Ensure that both Prometheus and Trivy Operator are installed correctly.
+ Ensure that both Prometheus and Trivy Operator are installed correctly.
 
 ![Image](https://github.com/user-attachments/assets/01fd608d-656c-4427-b661-020463497c03)
 
-# Prometheus operator:
+ Prometheus operator:
 ![Image](https://github.com/user-attachments/assets/357d48a9-aa05-4e1a-86d3-a27ba1f29a78)
 
 Before defining our alerting rules, it's important to first review the security metrics exposed by the Trivy Operator to understand what insights are available.
 
 ![Image](https://github.com/user-attachments/assets/fb0d148c-744f-4962-9c0d-640dbc5ff8df)
 
-# kubectl port-forward service/trivy-operator 8080:8080 -n trivy-system
+ kubectl port-forward service/trivy-operator 8080:8080 -n trivy-system
 
 By port-forwarding the Prometheus service, we can easily access the Prometheus UI and run queries against specific metrics for quicker exploration and validation.
 
