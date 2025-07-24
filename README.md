@@ -1,6 +1,9 @@
-Introduction:
+
 # Setting Up AlertManager with PrometheusRules to Forward Security Metrics to Slack.
+
 This guide provides a comprehensive walkthrough for configuring Prometheus, Trivy-Operator, PrometheusRules, and AlertManager to monitor security metrics and deliver real-time alerts to Slack. By integrating these tools, you can proactively track vulnerabilities, policy violations, and other security events within your Kubernetes environment.
+
+Introduction:
 
 # Monitor your cluster security
 
