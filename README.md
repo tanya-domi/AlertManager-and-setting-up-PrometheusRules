@@ -84,7 +84,7 @@ Before configuring alerts for our security metrics, we’ll deploy the Trivy Ope
 ```
 helm upgrade --install prom prometheus-community/kube-prometheus-stack -n monitoring --values observability-conf/prom-values-alertmanager.yaml
 ```
-![Image](https://github.com/user-attachments/assets/f26370ea-df8e-4e10-945a-268093330e31)
+![Image](https://github.com/user-attachments/assets/71eff22d-3f55-47ab-a70e-ee2a9bfc7395)
 
 ## Installing the Trivy Operator
 The Trivy Operator integrates the Trivy security scanner into your Kubernetes cluster, enabling native, continuous security scanning of running resources such as Pods, Images, and Configurations.
@@ -153,6 +153,11 @@ kubectl get VulnerabilityReport -n test
 ![Image](https://github.com/user-attachments/assets/7c4d21d4-95ee-4631-abaa-3e065dee2450)
 
 Additionally, any triggered alerts,such as those related to critical vulnerabilities,will be visible in AlertManager, where you can view, acknowledge, and manage them as needed.
+
+![Image](https://github.com/user-attachments/assets/b5d464b6-5a4d-47bd-bf7e-3b6a274f2153)
+
+Slack integration has been successfully validated and is functioning as expected within the system workflow.
+
 
 ![Image](https://github.com/user-attachments/assets/c9d3ba7b-7faf-40c2-b5d1-740da41545fb)
 ## Tracee
